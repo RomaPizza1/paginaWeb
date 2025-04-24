@@ -1,13 +1,25 @@
+// function enviarPedido(e) {
+//     e.preventDefault();
+//     const pizza = document.getElementById("pizza").value;
+//     const tamano = document.getElementById("tamano").value;
+//     const direccion = document.getElementById("direccion").value;
+//     const mensaje = `Hola, quiero pedir una pizza ${pizza}, tamaño ${tamano}. Entregar en: ${direccion}`;
+//     const telefono = "14077125916"; // <-- tu número con código de país (sin +) no se a donde llega
+//     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+//     window.open(url, '_blank');
+//   }
+window.location.href = url;
+
 function enviarPedido(e) {
-    e.preventDefault();
-    const pizza = document.getElementById("pizza").value;
-    const tamano = document.getElementById("tamano").value;
-    const direccion = document.getElementById("direccion").value;
-    const mensaje = `Hola, quiero pedir una pizza ${pizza}, tamaño ${tamano}. Entregar en: ${direccion}`;
-    const telefono = "14077125916"; // <-- tu número con código de país (sin +) no se a donde llega
-    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
-    window.open(url, '_blank');
-  }
+e.preventDefault();
+const pizza = document.getElementById("pizza").value;
+const tamano = document.getElementById("tamano").value;
+const direccion = document.getElementById("direccion").value;
+const mensaje = `Hola, quiero pedir una pizza ${pizza}, tamaño ${tamano}. Entregar en: ${direccion}`;
+const telefono = "14077125916";
+const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+window.location.href = url; // redirige directo a WhatsApp
+}
 
 //codigo de animacion para titulos
 document.addEventListener("DOMContentLoaded", function () {
