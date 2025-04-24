@@ -1,0 +1,1396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roma Pizza Lake Helen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="../paginaWeb/style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" type="image/png" href="../paginaWeb/pictures/favicon.jpg" sizes="16x16 32x32"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Courgette&family=Permanent+Marker&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark-menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#sec-menu">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#sec-menu">Menu</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec-location">Location</a>
+                        </li>
+                    </ul>
+                    <div class="col-12 col-md-2 divRedes d-none d-md-block">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0 d-flex flex-row listaRedes">
+                            <li class="me-2">
+                                <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li class="me-2">
+                                <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-tiktok"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <!-- Picture Principal 2000px x 900px-->
+        <div class="col-12">
+            <img src="../paginaWeb/pictures/ChatGPTImg_fondo2000x1000.png" class="img-fluid" alt="...">
+        </div>
+        
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+      
+        <div class="container marketing">
+        <!-- seccion-->
+        <!-- <hr class="featurette-divider">
+        <div id="sec-history">
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light permanent-marker-regular titulo animacion-menu oculto">Our History</h1>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col">
+                        <h2>Located in Lake Helen</h2>
+                        <br>
+                        <h2>The Gem of Florida</h2>
+                        <br>
+                        <h3>Welcome to Roma Pizza & Subs</h3>
+                        <p>We are a local, family owned restaurant, passionately serving Lake Helen, 
+                            FL for over 30 years with deliciously baked New York style pizzas, subs, calzones, pastas, salads, desserts and more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div> -->
+        <!-- fin seccion history--> 
+        
+        <!-- seccion menu-->
+        <div style="background-color: white;">
+            <h2>Prueba</h2>
+            <form onsubmit="enviarPedido(event)">
+                <label>Tipo de pizza:</label>
+                <select id="pizza">
+                  <option value="Margarita">Margarita</option>
+                  <option value="Pepperoni">Pepperoni</option>
+                  <option value="Hawaiana">Hawaiana</option>
+                </select>
+              
+                <label>Tamaño:</label>
+                <select id="tamano">
+                  <option value="Chica">Chica</option>
+                  <option value="Mediana">Mediana</option>
+                  <option value="Grande">Grande</option>
+                </select>
+              
+                <label>Dirección:</label>
+                <input type="text" id="direccion" required>
+              
+                <button type="submit">Enviar Pedido</button>
+              </form>
+        </div>
+        <div id="sec-menu" style="margin-top: 8em;">
+            <hr class="featurette-divider">
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light permanent-marker-regular titulo animacion-menu oculto">Menu</h1>
+                    </div>
+                </div>
+            </section>
+            <!-- carrusel Probando carrusel en mobile-->
+            <div class="container mt-5" style="display: none;">
+                <h2>Probando carrusel en mobile</h2>
+                <!-- este div se oculta cuando es mobile -->
+                
+                <!-- este div se muestra cuando es un disposotivo mobile -->
+                <div id="mobileCards" class="d-block d-md-none">
+                    <div id="mobileCarousel" class="carousel slide"> 
+                        
+                        <!-- Controles del carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- fin carrusel Probando carrusel en mobile -->
+
+            <!-- carrusel Appetizers-->
+            <div class="container mt-5">
+                <h2 class="permanent-marker-regular subtitle" style="text-align: center;">Appetizers</h2>
+                
+                <!-- este div se oculta cuando es mobile -->
+                <div id="carouselCards1" class="carousel slide d-none d-md-block"><!-- data-bs-ride="carousel" -->
+                    <div class="carousel-inner">
+                        <!-- Grupo de 1 tarjetas -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 1">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Mozzarella Sticks</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> qbcgqieufb efubqeifuq</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $8.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 2">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Meatballs</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> hejetjryjyrjyr</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>2pc :</strong> $5.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 3">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Italian Mild Sausage</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> rgfrsg fryjuyj</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $5.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grupo de 2 tarjetas -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 4">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>French Fries</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Salsa, cheese</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $4.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 5">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Bruschetta</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Sxbiuwqhuiwqd</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>1pc :</strong> $3.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 6">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Chicken Strips With Fries</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> fried chicken</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $9.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grupo de 3  -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 4">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Boneless Wings</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Choose 1 flavor: <strong style="color: red;">hot, mild, bbq, garlic parmesan, teriyaki, sweet thai chili</strong></p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $10.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 5">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Chicken Wings</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Choose 1 flavor: <strong style="color: red;">hot, mild, bbq, garlic parmesan, teriyaki, sweet thai chili</strong></p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>8pc :</strong> $11.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 6">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Garlic Knots</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> served with our homemade marinara sauce</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>6pc :</strong> $4.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Prev</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCards1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- este div se muestra cuando es un disposotivo mobile -->
+                <div id="mobileCards1" class="d-block d-md-none">
+                    <div id="mobileCarousel1" class="carousel slide"> <!--data-bs-ride="carousel"-->
+                        <div class="carousel-inner">
+                            <!-- Primera imagen -->
+                            <div class="carousel-item active">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 1">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                            <!-- Segunda imagen -->
+                            <div class="carousel-item">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 2">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                            <!-- Tercera imagen -->
+                            <div class="carousel-item">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 3">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                        </div>
+                        <!-- Controles del carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- fin carrusel Appetizers -->
+
+            <!-- carrusel pizzas-->
+            <div class="container mt-5">
+                <h2 class="permanent-marker-regular subtitle" style="text-align: center;">Pizzas</h2>
+                <p style="text-align: center;"> <strong>TOPPINGS:</strong> Pepperoni <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Sausage <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Bacon <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Ham <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Spinach <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Brocoli <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Onions <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Green peppers <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Tomatoes <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Pinapple <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Slice meatballs 
+                    <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Fresh basil <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Fresh chopped garlic <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Black olives <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Anchovies <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Mushrooms <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Ricotta <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Banana peppers <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Jalapeno peppers.
+                </p>
+                <!-- este div se oculta cuando es mobile -->
+                <div id="carouselCards4" class="carousel slide d-none d-md-block"><!-- data-bs-ride="carousel" -->
+                    <div class="carousel-inner">
+                        <!-- Grupo de 1 tarjetas -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 1">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Meat Lovers (RED SAUCE)</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> pepperoni, bacon, ham & sausage</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Md 14":</strong> $18.99&nbsp; <strong>X-large 18":</strong>  $25.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 2">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Supreme the Works (RED SAUCE)</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> pepperoni, sausage, mushrooms, peppers & onions</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Md 14":</strong> $16.99&nbsp; <strong>X-large 18":</strong>  $26.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 3">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Roma Hawaiian Pizza "Aloha" (RED SAUCE)</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> classic pineapple, bacon and ham</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Md 14":</strong> $18.99&nbsp; <strong>X-large 18":</strong>  $25.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grupo de 2 tarjetas -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 4">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>BUILD YOUR OWN UP TO 4 TOPPINGS</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Choose up to 4 toppings from the topping list!</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Md 14":</strong> $18.99&nbsp; <strong>X-large 18":</strong>  $26.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 5">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Roma White Spinach (WHITE SAUCE)</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> homemade white sauce, garlic, spinach, tomatoes, mushrooms</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Md 14":</strong> $18.99&nbsp; <strong>X-large 18":</strong>  $25.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 6">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>White Bianca (WHITE SAUCE)</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> garlic base, mozzarella, ricotta cheese, oregano, parmesan cheese</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Md 14":</strong> $16.99&nbsp; <strong>X-large 18":</strong>  $23.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grupo de 3 tarjetas -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 4">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Chicken Bacon Ranch (WHITE SAUCE)</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> garlic base, grilled chicken, bacon and ranch drizzle</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Md 14":</strong> $18.99&nbsp; <strong>X-large 18":</strong>  $25.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 5">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Caprese (WHITE SAUCE)</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> garlic base, fresh mozzarella, tomatoes, basil, balsamic glaze</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Md 14":</strong> $18.99&nbsp; <strong>X-large 18":</strong>  $25.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 6">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Buffalo Chicken (WHITE SAUCE)</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> garlic base, chicken tossed in buffalo sauce with ranch drizzle</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Md 14":</strong> $16.99&nbsp; <strong>X-large 18":</strong>  $23.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grupo de 4 tarjetas -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 4">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Hand Tossed Plain Cheese</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Additional toppins 2.00 ea - 3.00ea</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Md 14":</strong> $12.99&nbsp; <strong>X-large 18":</strong>  $17.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 5">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Gluten Free Cauliflower Crust</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Additional toppins 2.00 ea</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Personal size only 10":</strong> $10.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 6">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Sicilian Style Square Pizza </strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Thick square spongy dough, homemade sauce, cheese and crunchy base.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Size only 16":</strong> $19.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grupo de 5 tarjetas -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 4">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Grandma Pie</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Thinner pan pizza with cooked plum tomato sauce, homemade pesto sauce, fresh garlic & freash basil</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    <strong>Size only 16":</strong> $23.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Prev</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCards4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- este div se muestra cuando es un disposotivo mobile -->
+                <div id="mobileCards3" class="d-block d-md-none">
+                    <div id="mobileCarousel4" class="carousel slide"><!--data-bs-ride="carousel"-->
+                        <div class="carousel-inner">
+                            <!-- Primera imagen -->
+                            <div class="carousel-item active">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 1">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                            <!-- Segunda imagen -->
+                            <div class="carousel-item">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 2">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                            <!-- Tercera imagen -->
+                            <div class="carousel-item">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 3">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                        </div>
+                        <!-- Controles del carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- fin carrusel pizzas -->
+
+            <!-- carrusel Pastas-->
+            <div class="container mt-5">
+                <h2 class="permanent-marker-regular subtitle" style="text-align: center;">Pastas</h2>
+                <!-- este div se oculta cuando es mobile -->
+                <div id="carouselCards2" class="carousel slide d-none d-md-block"><!-- data-bs-ride="carousel" -->
+                    <div class="carousel-inner">
+                        <!-- Grupo de 1 tarjetas -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 1">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Pasta With Tomato Sauce</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Spaghetti or Ziti</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $8.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 2">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Pasta With Meatballs or Sausage </strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Spaghetti or Ziti</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $11.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 3">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Pasta With Meat Sauce</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Spaghetti or Ziti</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $12.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grupo de 2 tarjetas -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 4">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Stuffed Shells</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> rgrgrggrgeg</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $11.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 5">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Chicken Parm Pasta</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> dfcwfwrf</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $12.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 6">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Lasagna</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> egthtgetheth</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $12.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grupo de 3 tarjetas -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 4">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Baked Ziti</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> rgrgrggrgeg</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $11.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 5">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Chicken Parm Pasta</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> dfcwfwrf</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $12.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 6">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Lasagna</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> egthtgetheth</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $12.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Prev</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCards2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- este div se muestra cuando es un disposotivo mobile -->
+                <div id="mobileCards2" class="d-block d-md-none">
+                    <div id="mobileCarousel2" class="carousel slide"><!--data-bs-ride="carousel"-->
+                        <div class="carousel-inner">
+                            <!-- Primera imagen -->
+                            <div class="carousel-item active">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 1">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                            <!-- Segunda imagen -->
+                            <div class="carousel-item">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 2">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                            <!-- Tercera imagen -->
+                            <div class="carousel-item">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 3">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                        </div>
+                        <!-- Controles del carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- fin carrusel pastas -->
+            <!-- carrusel Subs-->
+            <div class="container mt-5">
+                <h2 class="permanent-marker-regular subtitle" style="text-align: center;">Subs</h2>
+                <!-- este div se oculta cuando es mobile -->
+                <div id="carouselCards3" class="carousel slide d-none d-md-block"><!-- data-bs-ride="carousel" -->
+                    <div class="carousel-inner">
+                        <!-- Grupo de 3 tarjetas (1/4) -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 1">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Philly Cheese Steak</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> onions, green pappers, mushrooms, cheese</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $12.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 2">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Chicken Parm</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Sfgdfgged</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $11.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 3">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Sausage Parm</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Sargergtgeg</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $11.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grupo de 3 tarjetas (2/4) -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 4">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Meatball Parm</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> yrjyjyr</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $10.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 5">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Roma's Italian Sub</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> ham, salami, capicolla, provolone, lettuce, tomatto, onions, oil & vinegar, mayo</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $12.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Prev</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCards3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- este div se muestra cuando es un disposotivo mobile -->
+                <div id="mobileCards3" class="d-block d-md-none">
+                    <div id="mobileCarousel3" class="carousel slide"><!--data-bs-ride="carousel"-->
+                        <div class="carousel-inner">
+                            <!-- Primera imagen -->
+                            <div class="carousel-item active">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 1">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                            <!-- Segunda imagen -->
+                            <div class="carousel-item">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 2">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                            <!-- Tercera imagen -->
+                            <div class="carousel-item">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 3">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                        </div>
+                        <!-- Controles del carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- fin carrusel sub -->
+
+            <!-- carrusel Salads-->
+            <div class="container mt-5">
+                <h2 class="permanent-marker-regular subtitle" style="text-align: center;">Salads</h2>
+                <p style="text-align: center;"><i class="bi bi-circle-fill" style="font-size: 6px;"></i> Add chicken to any salad $3.99 <i class="bi bi-circle-fill" style="font-size: 6px;"></i></p>
+                <!-- este div se oculta cuando es mobile -->
+                <div id="carouselCards5" class="carousel slide d-none d-md-block">
+                    <div class="carousel-inner">
+                        <!-- Grupo de 3 tarjetas (1/4) -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 1">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Garden Salad</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> romain lettuce, onions, olives, 
+                                                tomatoes, cucumber & cheese  </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $8.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 2">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Caesar Salad</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> romain lettuce, croutons,                          lettuce, tomatoes, cucumber, onions,
+                                                parmesan cheese, creamy dressing</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $9.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 3">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Roma's Greek Salad</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> lettuce, tomatoes, cucumber, onions,
+                                                greek olives, pepperoncini, feta cheese</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $11.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grupo de 3 tarjetas (2/4) -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 4">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Antipasto Salad</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> lettuce, tomatoes, cucumber, onions,
+                                                greek olives, pepperoncini, ham, salami, provolone cheese</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $12.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards5" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Prev</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCards5" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- este div se muestra cuando es un disposotivo mobile -->
+                <div id="mobileCards3" class="d-block d-md-none">
+                    <div id="mobileCarousel5" class="carousel slide">
+                        <div class="carousel-inner">
+                            <!-- Primera imagen -->
+                            <div class="carousel-item active">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 1">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                            <!-- Segunda imagen -->
+                            <div class="carousel-item">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 2">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                            <!-- Tercera imagen -->
+                            <div class="carousel-item">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 3">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                        </div>
+                        <!-- Controles del carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- fin carrusel salads -->
+
+            <!-- carrusel desserts-->
+            <div class="container mt-5">
+                <h2 class="permanent-marker-regular subtitle" style="text-align: center;">Kids Menu and Desserts</h2>
+                <!-- este div se oculta cuando es mobile -->
+                <div id="carouselCards6" class="carousel slide d-none d-md-block">
+                    <div class="carousel-inner">
+                        <!-- Grupo 1 de tarjetas -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 1">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Kids Menu</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> Side pasta with sauce</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $5.99
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 2">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Cannoli</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> rgergeg</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $xxx
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 3">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Cheescake</strong></p>
+                                            <p class="card-text"><strong>Description:</strong> hbjdhcwhd</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $xxx
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <img src="../paginaWeb/pictures/pizza.jpg" class="card-img-top" alt="Imagen 3">
+                                        <div class="card-body">
+                                            <p class="card-text"><strong>Drinks</strong></p>
+                                            <p class="card-text"><strong>Description:</strong>
+                                                Coca-Cola products and Bottled Water</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                <p>
+                                                    $xxx
+                                                </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCards6" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Prev</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCards6" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- este div se muestra cuando es un disposotivo mobile -->
+                <div id="mobileCards3" class="d-block d-md-none">
+                    <div id="mobileCarousel6" class="carousel slide">
+                        <div class="carousel-inner">
+                            <!-- Primera imagen -->
+                            <div class="carousel-item active">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 1">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                            <!-- Segunda imagen -->
+                            <div class="carousel-item">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 2">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                            <!-- Tercera imagen -->
+                            <div class="carousel-item">
+                                <img src="../paginaWeb/pictures/pizza.jpg" class="d-block w-100" alt="Imagen 3">
+                                <p><strong>Description: </strong>queso, tomate, algas</p>
+                                <p>Md: $10 Lg: $12 Xl: $12</p>
+                            </div>
+                        </div>
+                        <!-- Controles del carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel6" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel6" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- fin carrusel desserts -->
+        </div>
+        <!-- fin seccion menu-->
+
+        <!-- seccion location-->
+        <div id="sec-location">
+            <hr class="featurette-divider">
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light permanent-marker-regular titulo animacion-menu oculto">Location</h1>
+                    </div>
+                </div>
+            </section>
+            <div class="container" >
+                <div class="row" style="margin-top: 10px;">
+                    <div class="row">
+                        <div class="col-12 col-md-6 info" style="margin-bottom: 50px; padding-left: 50px;">
+                            <h4 class="permanent-marker-regular subtitle">Phone:</h4>
+                            <p>(386) 228-3444</p>
+                            <p>(386) 228-3451</p>
+                            <h4 class="permanent-marker-regular subtitle">Location</h4>
+                            <p>336 S Lakeview Dr, Lake Helen, FL 32744</p>
+                            <h4 class="permanent-marker-regular subtitle">Hours</h4>
+                            <p><strong>Monday</strong> Closed</p>
+                            <p><strong>Tue-Sat</strong> 11am-9pm</p>
+                        </div>
+                        <div class="col-12 col-md-6 mapa" style="margin-bottom: 50px;box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.2298207708973!2d-81.23472352469737!3d28.98056007547647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e71997885d1a25%3A0xdd2bb3beed2b40b!2sPapa&#39;s%20Pizza%20%26%20Subs!5e0!3m2!1sen!2sus!4v1740768614607!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin seccion location-->
+          <!-- START THE FEATURETTES -->
+      
+          <!-- <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+              <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+            </div>
+            <div class="col-md-5">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+              <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+              <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+            </div>
+            <div class="col-md-5">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      
+            </div>
+          </div>
+      
+          <hr class="featurette-divider"> -->
+      
+          <!-- /END THE FEATURETTES -->
+      
+        </div><!-- /.container -->
+      
+      
+        <!-- FOOTER Desktop-->
+        <footer class="container footer d-none d-md-block">
+            <div class="row">
+                <div class="col-10">
+                    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                </div>
+                <div class="col-2" style="text-align: center;">
+                    <a href="#"><i class="bi bi-arrow-up-circle" style="color: white; font-size: 30px;"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!-- fin FOOTER Desktop-->
+        
+        <!-- footer para Mobile -->
+        <footer class="container footerMobile d-block d-md-none">
+            <div class="row">
+                <div class="col-12">
+                    <p>Roma Pizza Lake Helen</p>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-10 col-md-2 divRedes">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 d-flex flex-row listaRedes">
+                        <li class="me-2">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="me-2">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <a href="#"><i class="bi bi-arrow-up-circle" style="color: white; font-size: 30px;"></i></a>
+                </div>
+            </div>
+          </footer>
+        <!-- fin footer para Mobile -->
+      </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="../paginaWeb/js/script.js" defer></script>
+  </body>
+</html>
