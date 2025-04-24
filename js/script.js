@@ -4,7 +4,7 @@ function enviarPedido(e) {
     const tamano = document.getElementById("tamano").value;
     const direccion = document.getElementById("direccion").value;
     const mensaje = `Hola, quiero pedir una pizza ${pizza}, tamaño ${tamano}. Entregar en: ${direccion}`;
-    const telefono = "4077125916"; // <-- tu número con código de país (sin +) no se a donde llega
+    const telefono = "14077125916"; // <-- tu número con código de país (sin +) no se a donde llega
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
   }
