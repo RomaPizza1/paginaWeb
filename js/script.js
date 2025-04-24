@@ -8,7 +8,6 @@
 //     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
 //     window.open(url, '_blank');
 //   }
-window.location.href = url;
 
 function enviarPedido(e) {
 e.preventDefault();
