@@ -89,26 +89,18 @@
         <!-- seccion menu-->
         <div style="background-color: white;">
             <h2>Prueba envios por Whatsapp</h2>
-            <form onsubmit="enviarPedido(event)">
-                <label>Tipo de pizza:</label>
-                <select id="pizza">
-                  <option value="Margarita">Margarita</option>
-                  <option value="Pepperoni">Pepperoni</option>
-                  <option value="Hawaiana">Hawaiana</option>
-                </select>
-              
-                <label>Tamaño:</label>
-                <select id="tamano">
-                  <option value="Chica">Chica</option>
-                  <option value="Mediana">Mediana</option>
-                  <option value="Grande">Grande</option>
-                </select>
-              
-                <label>Dirección:</label>
-                <input type="text" id="direccion" required>
-              
-                <button type="submit">Enviar Pedido</button>
-            </form>
+            <form id="pedidoForm">
+                <label for="nombre">Tu nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+            
+                <label for="producto">Producto:</label><br>
+                <input type="text" id="producto" name="producto" required><br><br>
+            
+                <label for="cantidad">Cantidad:</label><br>
+                <input type="number" id="cantidad" name="cantidad" required><br><br>
+            
+                <button type="submit">Enviar por WhatsApp</button>
+              </form>
         </div>
         <!-- <button type="submit" style="background-color:#25D366; color:white; padding:12px 20px; border:none; border-radius:8px; font-size:16px; width:100%;">
             🟢 Enviar Pedido por WhatsApp

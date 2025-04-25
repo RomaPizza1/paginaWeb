@@ -1,13 +1,15 @@
-function enviarPedido(e) {
+document.getElementById('pedidoForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    const pizza = document.getElementById("pizza").value;
-    const tamano = document.getElementById("tamano").value;
-    const direccion = document.getElementById("direccion").value;
-    const mensaje = `Hola, quiero pedir una pizza ${pizza}, tamaño ${tamano}. Entregar en: ${direccion}`;
-    const telefono = "14077125916"; // <-- tu número con código de país (sin +) no se a donde llega
-    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+    const nombre = document.getElementById('nombre').value;
+    const producto = document.getElementById('producto').value;
+    const cantidad = document.getElementById('cantidad').value;
+
+    const telefonoEmpresa = "14077125916"; // Reemplaza con tu número de WhatsApp (con código de país, sin signos +)
+    const mensaje = `Hola, soy ${nombre}. Quiero pedir ${cantidad} ${producto}.`;
+    const url = `https://wa.me/${telefonoEmpresa}?text=${encodeURIComponent(mensaje)}`;
+
     window.open(url, '_blank');
-  }
+  });
 
 //codigo de animacion para titulos
 document.addEventListener("DOMContentLoaded", function () {
