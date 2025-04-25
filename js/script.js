@@ -4,7 +4,7 @@ document.getElementById('pedidoForm').addEventListener('submit', function(e) {
     const producto = document.getElementById('producto').value;
     const cantidad = document.getElementById('cantidad').value;
 
-    const telefonoEmpresa = "14077125916"; // Reemplaza con tu número de WhatsApp (con código de país, sin signos +)
+    const telefonoEmpresa = "17865387774"; // Reemplaza con tu número de WhatsApp (con código de país, sin signos +)
     const mensaje = `Hola, soy ${nombre}. Quiero pedir ${cantidad} ${producto}.`;
     const url = `https://wa.me/${telefonoEmpresa}?text=${encodeURIComponent(mensaje)}`;
 
