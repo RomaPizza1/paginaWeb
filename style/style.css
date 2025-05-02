@@ -69,6 +69,15 @@ footer.footer{
 
 /* Se aplica en móviles */
 @media (max-width: 768px) {
+    .footerMobile {
+        height: 70px;
+    }
+    .footerMobile .col-12{
+        height: 25px;
+    }
+    .footerMobile .col-2{
+        margin-top: -22px;
+    }
     #sec-location{
         height: 800px;
     }

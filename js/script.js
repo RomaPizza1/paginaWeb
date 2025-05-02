@@ -1,16 +1,3 @@
-document.getElementById('pedidoForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const nombre = document.getElementById('nombre').value;
-    const producto = document.getElementById('producto').value;
-    const cantidad = document.getElementById('cantidad').value;
-
-    const telefonoEmpresa = "17865387774"; // Reemplaza con tu número de WhatsApp (con código de país, sin signos +)
-    const mensaje = `Hola, soy ${nombre}. Quiero pedir ${cantidad} ${producto}.`;
-    const url = `https://wa.me/${telefonoEmpresa}?text=${encodeURIComponent(mensaje)}`;
-
-    window.open(url, '_blank');
-  });
-
 //codigo de animacion para titulos
 document.addEventListener("DOMContentLoaded", function () {
 const observer = new IntersectionObserver(
