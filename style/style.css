@@ -66,6 +66,11 @@ footer.footer{
   .animacion-activa {
     animation: fadeSlideIn 1s ease-out forwards;
 }
+.footer p{
+    color: white;
+    padding-left: 35rem;
+    padding-top: 10px;
+}
 
 /* Se aplica en móviles */
 @media (max-width: 768px) {
