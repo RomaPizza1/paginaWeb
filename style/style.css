@@ -20,11 +20,11 @@
 }
 .bg-dark-menu {
     background-color: black;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 footer.footer{
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .permanent-marker-regular {
@@ -71,8 +71,10 @@ footer.footer{
     padding-left: 35rem;
     padding-top: 10px;
 }
-
-/* Se aplica en móviles */
+.logoMenu img{
+    padding-left: 10%;
+}
+/* ----------------------- Se aplica en móviles ---------------------- */
 @media (max-width: 768px) {
     .footerMobile {
         height: 70px;
@@ -85,6 +87,9 @@ footer.footer{
     }
     #sec-location{
         height: 800px;
+    }
+    .linksMenuMobile{
+        margin-top: 10px;
     }
     .divRedes ul {
         display: flex;
