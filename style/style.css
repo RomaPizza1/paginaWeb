@@ -1,15 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&display=swap');
 #main{
     background-image: url('../pictures/ChatGPTImgPizzaClara.png');   /*ChatGPTImgPizzaClara*/
     background-repeat: repeat;
     background-size: auto;
 }
+.linksHeader{
+    padding-top: 12px;
+}
+.linkMenu, .linkLocation{
+    font-family: 'Pacifico', cursive;
+    color: #006837;
+    font-size: 30px;
+}
+.linkMenuMobile, .linkMenuLocation{
+    font-family: 'Pacifico', cursive;
+    color: #F5F1E8;
+    font-size: 25px;
+}
 .titulo{
+    font-family: 'Pacifico', cursive;
     color: #551801; /*red*/
     text-shadow: 5px 5px 5px rgba(154, 112, 112, 0.7);
+    font-size: 3.5rem;
 }
 .subtitle{
+    font-family: 'Pacifico', cursive;
     color: #1b6736;
     text-shadow: 5px 5px 5px rgba(126, 179, 136, 0.7);
+    margin-bottom: 2rem;
 }
 .row.py-lg-5, #sec-history, #sec-location, #sec-menu{
     background-color: #dee6c1;
@@ -67,13 +85,23 @@ footer.footer{
     animation: fadeSlideIn 1s ease-out forwards;
 }
 .footer p{
+    font-family: 'Pacifico', cursive;
     color: white;
-    padding-left: 35rem;
+    padding-left: 31rem;
     padding-top: 10px;
+    font-size: 30px;
 }
 .logoMenu img{
     padding-left: 10%;
 }
+.ImagenPortada {
+    background-image: url('../pictures/cover.jpeg'); /* Ajusta la ruta según tu estructura */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw; /* 100% del ancho de la pantalla */
+    height: 100vh; /* 100% del alto de la pantalla */
+  }
 /* ----------------------- Se aplica en móviles ---------------------- */
 @media (max-width: 768px) {
     .footerMobile {
@@ -114,6 +142,13 @@ footer.footer{
     }
     .info, .mapa{
         text-align: center;
+    }
+    .footerMobile p{
+        font-family: 'Pacifico', cursive;
+        color: white;
+        /* padding-left: 31rem;
+        padding-top: 10px;
+        font-size: 30px; */
     }
 }
 
