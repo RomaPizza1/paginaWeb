@@ -100,7 +100,7 @@ footer.footer{
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw; /* 100% del ancho de la pantalla */
-    height: 100vh; /* 100% del alto de la pantalla */
+    height: 125vh; /* 100% del alto de la pantalla */
   }
 /* ----------------------- Se aplica en móviles ---------------------- */
 @media (max-width: 768px) {
@@ -150,5 +150,13 @@ footer.footer{
         padding-top: 10px;
         font-size: 30px; */
     }
+    .ImagenPortada {
+        background-image: url('../pictures/cover.jpeg'); /* Ajusta la ruta según tu estructura */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100vw; /* 100% del ancho de la pantalla */
+        height: 100vh; /* 100% del alto de la pantalla */
+      }
 }
 
