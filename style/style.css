@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&display=swap');
 #main{
-    background-image: url('../pictures/ChatGPTImgPizzaClara.png');   /*ChatGPTImgPizzaClara*/
+    /* background-image: url('../pictures/ChatGPTImgPizzaClara.png');
     background-repeat: repeat;
-    background-size: auto;
+    background-size: auto; */
+    background-color: #D6E4A2;
+}
+.pSalad{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.pToppings{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.row.py-lg-5, #sec-history, #sec-location, #sec-menu{
+    background-color: #F9F7EF;
+    opacity: 0.95;
 }
 .linksHeader{
     padding-top: 12px;
@@ -19,19 +32,23 @@
 }
 .titulo{
     font-family: 'Pacifico', cursive;
-    color: #551801; /*red*/
+    color: #BC321F; /*red*/
     text-shadow: 5px 5px 5px rgba(154, 112, 112, 0.7);
-    font-size: 3.5rem;
+    font-size: 5.5rem;
 }
 .subtitle{
     font-family: 'Pacifico', cursive;
     color: #1b6736;
     text-shadow: 5px 5px 5px rgba(126, 179, 136, 0.7);
     margin-bottom: 2rem;
+    font-size: 4rem;
 }
-.row.py-lg-5, #sec-history, #sec-location, #sec-menu{
-    background-color: #dee6c1;
-    opacity: 0.95;
+.subtitle_L{
+    font-family: 'Pacifico', cursive;
+    color: #1b6736;
+    text-shadow: 5px 5px 5px rgba(126, 179, 136, 0.7);
+    margin-bottom: 2rem;
+    font-size: 3rem;
 }
 .bi-facebook, .bi-instagram, .bi-tiktok{ 
     color: white; margin-left: 20px; font-size: 20px;
@@ -59,6 +76,9 @@ footer.footer{
     background-color: black;
     opacity: 0.6;
     border-radius: 18%;
+}
+.mapa{
+    margin-bottom: 50px;
 }
 
 /* Animación */
@@ -140,9 +160,13 @@ footer.footer{
         text-align: center;
         padding: 10px;
     }
-    .info, .mapa{
+    .info{
         text-align: center;
     }
+    /* .mapa{
+        text-align: center;
+        margin-bottom: 150px;
+    } */
     .footerMobile p{
         font-family: 'Pacifico', cursive;
         color: white;
@@ -158,5 +182,25 @@ footer.footer{
         width: 100vw; /* 100% del ancho de la pantalla */
         height: 100vh; /* 100% del alto de la pantalla */
       }
+    .subtitle_L{
+        font-family: 'Pacifico', cursive;
+        color: #1b6736;
+        text-shadow: 5px 5px 5px rgba(126, 179, 136, 0.7);
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    .titulo{
+        font-family: 'Pacifico', cursive;
+        color: #BC321F; /*red*/
+        text-shadow: 5px 5px 5px rgba(154, 112, 112, 0.7);
+        font-size: 4.5rem;
+    }
+    .subtitle{
+        font-family: 'Pacifico', cursive;
+        color: #1b6736;
+        text-shadow: 5px 5px 5px rgba(126, 179, 136, 0.7);
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
 }
 
