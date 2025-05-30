@@ -124,6 +124,11 @@ footer.footer{
   }
 /* ----------------------- Se aplica en móviles ---------------------- */
 @media (max-width: 768px) {
+    .linkMenuMobile, .linkMenuLocation{
+        font-family: 'Pacifico', cursive;
+        color: #006837;
+        font-size: 20px;
+    }
     .divLocation{
         padding-left: 10%;
     }
