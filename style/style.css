@@ -124,6 +124,9 @@ footer.footer{
   }
 /* ----------------------- Se aplica en móviles ---------------------- */
 @media (max-width: 768px) {
+    .divLocation{
+        padding-left: 10%;
+    }
     .footerMobile {
         height: 70px;
     }
@@ -133,9 +136,9 @@ footer.footer{
     .footerMobile .col-2{
         margin-top: -22px;
     }
-    #sec-location{
+    /* #sec-location{
         height: 800px;
-    }
+    } */
     .linksMenuMobile{
         margin-top: 10px;
     }
@@ -163,10 +166,6 @@ footer.footer{
     .info{
         text-align: center;
     }
-    /* .mapa{
-        text-align: center;
-        margin-bottom: 150px;
-    } */
     .footerMobile p{
         font-family: 'Pacifico', cursive;
         color: white;
