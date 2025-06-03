@@ -8,6 +8,7 @@
     <link href="style/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" type="image/png" href="../paginaWeb/pictures/favicon.jpg" sizes="16x16 32x32"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -18,7 +19,7 @@
                     <div class="col-4 linksHeader">
                         <a class="navbar-brand linkMenu" href="#sec-menu">Menu</a>
                         <a class="navbar-brand linkLocation" href="#sec-location">Location</a>
-                        <a style="color: white; font-size: 18px;" href="#" data-bs-toggle="modal" data-bs-target="#telefonoModal"><i class="bi bi-telephone-fill" style="margin-right: 5px"></i> Call us!</a>
+                        <a style="color: white; font-size: 25px; font-family: 'Lobster', cursive;" href="#" data-bs-toggle="modal" data-bs-target="#telefonoModal"><i class="bi bi-telephone-fill" style="margin-right: 5px"></i> Call us!</a>
                     </div>
                     <div class="col-6 logoMenu">
                         <img src="../paginaWeb/pictures/logoSinFondoB.png" class="img-fluid" alt="...">
@@ -54,7 +55,7 @@
                             <a class="navbar-brand linkMenuLocation" href="#sec-location">Location</a>
                         </div>
                         <div class="col-4" style="position: relative;">
-                           <a style="color: white;position: absolute; bottom: 4px; right: 15px; font-size: 18px;" href="tel:+13862283444"><i class="bi bi-telephone-fill" style="margin-right: 5px"></i> Call us!</a>
+                           <a style="color: white;position: absolute; bottom: 4px; right: 15px; font-size: 23px; font-family: 'Lobster', cursive;" href="tel:+13862283444"><i class="bi bi-telephone-fill" style="margin-right: 5px"></i> Call us!</a>
                         </div>
                     </div>
                 </div>
@@ -68,12 +69,12 @@
             <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="telefonoModalLabel">Phone Number</h5>
+                <h5 class="modal-title" id="telefonoModalLabel" style="font-family: 'Lobster', cursive;">Phone Number</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body text-center">
-                <p class="fs-4">Do you want to try the best pizza?</p>
-                <p class="fs-4">Call us:</p>
+                <p class="fs-4" style="font-family: 'Lobster', cursive;">Do you want to try the best pizza?</p>
+                <p class="fs-4" style="font-family: 'Lobster', cursive;">Call us:</p>
                 <a href="tel:+13862283444" class="btn btn-success fs-5">
                     (386) 228-3444
                 </a>
@@ -126,45 +127,51 @@
             <section class="py-5 text-center container">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="titulo animacion-menu oculto">Menu</h1>
+                        <!-- SVG -->
+                        <svg class="animacion-menu" width="100%" height="120" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                            <text x="50%" y="85" text-anchor="middle" class="textMenu">Menu</text>
+                        </svg>
                     </div>
                 </div>
             </section>
 
             <!-- menu Appetizers-->
             <div class="container">
-                <h2 class="subtitle" style="text-align: center;">Appetizers</h2>
-                
+                <svg width="100%" height="120" viewBox="0 0 1000 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                    <text x="50%" y="85" text-anchor="middle" class="textAppetizers">Appetizers</text>
+                </svg>
                 <!-- este div se oculta cuando es mobile -->
                 <div id="carouselCards1" class="carousel slide d-none d-md-block"><!-- data-bs-ride="carousel" -->
-                    <img src="../paginaWeb/pictures/menuappetizer.jpeg" class="img-fluid" alt="..." style="width: 100%;">
+                    <img src="../paginaWeb/pictures/menuApp_ST.jpeg" class="img-fluid" alt="..." style="width: 100%;">
                 </div>
                 <!-- este div se muestra cuando es un disposotivo mobile -->
                 <div id="mobileCards1" class="d-block d-md-none">
-                    <img src="../paginaWeb/pictures/menuappetizer.jpeg" class="img-fluid" alt="...">
+                    <img src="../paginaWeb/pictures/menuApp_ST.jpeg" class="img-fluid" alt="...">
                 </div>
             </div>
             <!-- fin menu Appetizers -->
 
             <!-- menu pizzas-->
             <div class="container mt-5">
-                <h2 class="subtitle" style="text-align: center;">Pizzas</h2>
+                <svg width="100%" height="120" viewBox="0 0 1000 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                    <text x="50%" y="85" text-anchor="middle" class="textPizzas">Pizzas</text>
+                </svg>
                 <p class="pToppings"> <strong>TOPPINGS:</strong> Pepperoni <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Sausage <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Bacon <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Ham <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Spinach <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Brocoli <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Onions <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Green peppers <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Tomatoes <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Pinapple <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Slice meatballs 
                     <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Fresh basil <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Fresh chopped garlic <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Black olives <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Anchovies <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Mushrooms <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Ricotta <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Banana peppers <i class="bi bi-circle-fill" style="font-size: 6px;"></i> Jalapeno peppers.
                 </p>
                 <!-- este div se oculta cuando es mobile -->
                 <div id="carouselCards4" class="carousel slide d-none d-md-block">
-                    <img src="../paginaWeb/pictures/menupizzas8.jpeg" class="img-fluid" alt="..." style="width: 100%; margin-bottom: 20px;">
+                    <img src="../paginaWeb/pictures/menuPizza_ST.jpeg" class="img-fluid" alt="..." style="width: 100%; margin-bottom: 20px;">
                     <video width="100%" height="auto" autoplay muted loop playsinline>
-                        <source src="../paginaWeb/pictures/menupizzas6.mp4" type="video/mp4">
+                        <source src="../paginaWeb/pictures/menuPizzas_ST.mp4" type="video/mp4">
                         Tu navegador no soporta el video HTML5.
                     </video>
                 </div>
                 <!-- este div se muestra cuando es un disposotivo mobile -->
                 <div id="mobileCards3" class="d-block d-md-none">
-                    <img src="../paginaWeb/pictures/menupizzas8.jpeg" class="img-fluid" alt="..." style="width: 100%; margin-bottom: 15px;">
+                    <img src="../paginaWeb/pictures/menuPizza_ST.jpeg" class="img-fluid" alt="..." style="width: 100%; margin-bottom: 15px;">
                     <video width="100%" height="auto" autoplay muted loop playsinline>
-                        <source src="../paginaWeb/pictures/menupizzas6.mp4" type="video/mp4">
+                        <source src="../paginaWeb/pictures/menuPizzas_ST.mp4" type="video/mp4">
                         Tu navegador no soporta el video HTML5.
                     </video>
                 </div>
@@ -173,42 +180,48 @@
 
             <!-- menu Pastas-->
             <div class="container mt-5">
-                <h2 class="subtitle" style="text-align: center;">Pastas & Subs</h2>
+                <svg width="100%" height="120" viewBox="0 0 1000 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                    <text x="50%" y="85" text-anchor="middle" class="textPastas">Pastas & Subs</text>
+                </svg>
                 <!-- este div se oculta cuando es mobile -->
                 <div id="carouselCards2" class="carousel slide d-none d-md-block">
-                    <img src="../paginaWeb/pictures/menupastas.jpeg" class="img-fluid" alt="..." style="width: 100%;">
+                    <img src="../paginaWeb/pictures/menuPasta_ST.jpeg" class="img-fluid" alt="..." style="width: 100%;">
                 </div>
                 <!-- este div se muestra cuando es un disposotivo mobile -->
                 <div id="mobileCards2" class="d-block d-md-none">
-                    <img src="../paginaWeb/pictures/menupastas.jpeg" class="img-fluid" alt="..." style="width: 100%;">
+                    <img src="../paginaWeb/pictures/menuPasta_ST.jpeg" class="img-fluid" alt="..." style="width: 100%;">
                 </div>
             </div>
             <!-- fin menu pastas -->
             <!-- menu Salads-->
             <div class="container mt-5">
-                <h2 class="subtitle" style="text-align: center;">Salads, Calzone & Stromboli</h2>
+                <svg width="100%" height="120" viewBox="0 0 1000 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                    <text x="50%" y="85" text-anchor="middle" class="textSalads">Salads, Calzone & Stromboli</text>
+                </svg>
                 <p class="pSalad"><i class="bi bi-circle-fill" style="font-size: 6px;"></i> Add chicken to any salad $3.99 <i class="bi bi-circle-fill" style="font-size: 6px;"></i></p>
                 <!-- este div se oculta cuando es mobile -->
                 <div id="carouselCards5" class="carousel slide d-none d-md-block">
-                    <img src="../paginaWeb/pictures/menusalad.jpeg" class="img-fluid" alt="..." style="width: 100%;">
+                    <img src="../paginaWeb/pictures/menuSalad_ST.jpeg" class="img-fluid" alt="..." style="width: 100%;">
                 </div>
                 <!-- este div se muestra cuando es un disposotivo mobile -->
                 <div id="mobileCards3" class="d-block d-md-none">
-                    <img src="../paginaWeb/pictures/menusalad.jpeg" class="img-fluid" alt="..." style="width: 100%;">
+                    <img src="../paginaWeb/pictures/menuSalad_ST.jpeg" class="img-fluid" alt="..." style="width: 100%;">
                 </div>
             </div>
             <!-- fin menu salads -->
 
             <!-- menu desserts-->
             <div class="container mt-5">
-                <h2 class="subtitle" style="text-align: center;">Kids Menu, Desserts & Catering</h2>
+                <svg width="100%" height="120" viewBox="0 0 1000 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                    <text x="50%" y="85" text-anchor="middle" class="textDesserts">Kids Menu, Desserts & Catering</text>
+                </svg>
                 <!-- este div se oculta cuando es mobile -->
                 <div id="carouselCards6" class="carousel slide d-none d-md-block">
-                    <img src="../paginaWeb/pictures/menukids.jpeg" class="img-fluid" alt="..." style="width: 100%;">
+                    <img src="../paginaWeb/pictures/menuDeserts_ST.jpeg" class="img-fluid" alt="..." style="width: 100%;">
                 </div>
                 <!-- este div se muestra cuando es un disposotivo mobile -->
                 <div id="mobileCards3" class="d-block d-md-none">
-                    <img src="../paginaWeb/pictures/menukids.jpeg" class="img-fluid" alt="..." style="width: 100%;">
+                    <img src="../paginaWeb/pictures/menuDeserts_ST.jpeg" class="img-fluid" alt="..." style="width: 100%;">
                 </div>
             </div>
             <!-- fin menu desserts -->
@@ -221,7 +234,9 @@
             <section class="py-5 text-center container">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="titulo animacion-menu oculto">Location</h1>
+                        <svg class="animacion-menu" width="100%" height="120" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                            <text x="50%" y="85" text-anchor="middle" class="textLocation">Location</text>
+                        </svg>
                     </div>
                 </div>
             </section>
@@ -232,12 +247,18 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.23393358094!2d-81.23466542469738!3d28.98043817547659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e7192131e45a0d%3A0xf80c2dee4fb30476!2sRoma%20Pizza%20Lake%20Helen!5e0!3m2!1sen!2sus!4v1748128351620!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                        </div>
                         <div class="col-12 col-md-6 info" style="margin-bottom: 80px; padding-left: 50px;">
-                            <h4 class="subtitle_L">Phone:</h4>
-                            <p><i class="bi bi-circle-fill" style="font-size: 6px;"></i><span style="margin-right: 10px; margin-left: 10px;">(386) 228-3444</span><i class="bi bi-circle-fill" style="font-size: 6px;"></i></p>
-                            <h4 class="subtitle_L">Hours</h4>
-                            <p><strong>Monday</strong> Closed <strong style="margin-left: 15px;">Tue-Sat</strong> 11am-9pm <strong style="margin-left: 15px;">Sunday</strong> 12pm-8pm</p>
-                            <h4 class="subtitle_L">Direction</h4>
-                            <p>336 S Lakeview Dr, Lake Helen, FL 32744</p>
+                            <svg width="100%" height="120" viewBox="0 0 1000 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                                <text x="50%" y="85" text-anchor="middle" class="textPhone">Phone</text>
+                            </svg>
+                            <p style="text-align: center;"><i class="bi bi-circle-fill" style="font-size: 6px;"></i><span style="margin-right: 10px; margin-left: 10px;">(386) 228-3444</span><i class="bi bi-circle-fill" style="font-size: 6px;"></i></p>
+                            <svg width="100%" height="120" viewBox="0 0 1000 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                                <text x="50%" y="85" text-anchor="middle" class="textPhone">Hours</text>
+                            </svg>
+                            <p style="text-align: center;"><strong>Monday</strong> Closed <strong style="margin-left: 15px;">Tue-Sat</strong> 11am-9pm <strong style="margin-left: 15px;">Sunday</strong> 12pm-8pm</p>
+                            <svg width="100%" height="120" viewBox="0 0 1000 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                                <text x="50%" y="85" text-anchor="middle" class="textPhone">Direction</text>
+                            </svg>
+                            <p style="text-align: center;">336 S Lakeview Dr, Lake Helen, FL 32744</p>
                         </div>
                         <div class="col-12 col-md-6 mapa d-none d-md-block" style="box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);"><!-- este div se oculta cuando es mobile -->
                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.23393358094!2d-81.23466542469738!3d28.98043817547659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e7192131e45a0d%3A0xf80c2dee4fb30476!2sRoma%20Pizza%20Lake%20Helen!5e0!3m2!1sen!2sus!4v1748128351620!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

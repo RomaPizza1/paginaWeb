@@ -17,38 +17,39 @@
     background-color: #F9F7EF;
     opacity: 0.95;
 }
+.textMenu, .textLocation {
+    font-family: 'Lobster', cursive;
+    font-size: 7rem;
+    stroke: black;
+    stroke-width: 3px;
+    fill: #c41e1e;
+}
+.textAppetizers , .textPizzas, .textPastas, .textSalads, .textDesserts{
+    font-family: 'Lobster', cursive;
+    font-size: 6rem;
+    stroke: black;
+    stroke-width: 3px;
+    fill: #c41e1e;
+}
+.textPhone{
+    font-family: 'Lobster', cursive;
+    font-size: 6rem;
+    stroke: black;
+    stroke-width: 3px;
+    fill: #006837;
+}
 .linksHeader{
     padding-top: 12px;
 }
 .linkMenu, .linkLocation{
-    font-family: 'Pacifico', cursive;
+    font-family: 'Lobster', cursive;
     color: #006837;
-    font-size: 30px;
+    font-size: 35px;
 }
 .linkMenuMobile, .linkMenuLocation{
-    font-family: 'Pacifico', cursive;
+    font-family: 'Lobster', cursive;
     color: #006837;
     font-size: 25px;
-}
-.titulo{
-    font-family: 'Pacifico', cursive;
-    color: #BC321F; /*red*/
-    text-shadow: 5px 5px 5px rgba(154, 112, 112, 0.7);
-    font-size: 5.5rem;
-}
-.subtitle{
-    font-family: 'Pacifico', cursive;
-    color: #1b6736;
-    text-shadow: 5px 5px 5px rgba(126, 179, 136, 0.7);
-    margin-bottom: 2rem;
-    font-size: 4rem;
-}
-.subtitle_L{
-    font-family: 'Pacifico', cursive;
-    color: #1b6736;
-    text-shadow: 5px 5px 5px rgba(126, 179, 136, 0.7);
-    margin-bottom: 2rem;
-    font-size: 3rem;
 }
 .bi-facebook, .bi-instagram, .bi-tiktok{ 
     color: white; margin-left: 20px; font-size: 20px;
@@ -124,10 +125,22 @@ footer.footer{
   }
 /* ----------------------- Se aplica en móviles ---------------------- */
 @media (max-width: 768px) {
+    .textPhone{
+        font-size: 11rem;
+    }
+    .textMenu, .textLocation{
+        font-size: 6rem;
+    }
+    .textAppetizers , .textPizzas, .textPastas, .textSalads, .textDesserts{
+        font-size: 8rem;
+    }
+    .textSalads, .textDesserts{
+        font-size: 5rem;
+    }
     .linkMenuMobile, .linkMenuLocation{
-        font-family: 'Pacifico', cursive;
+        font-family: 'Lobster', cursive;
         color: #006837;
-        font-size: 25px;
+        font-size: 30px;
     }
     .divLocation{
         padding-left: 10%;
@@ -141,9 +154,6 @@ footer.footer{
     .footerMobile .col-2{
         margin-top: -22px;
     }
-    /* #sec-location{
-        height: 800px;
-    } */
     .linksMenuMobile{
         margin-top: 10px;
     }
@@ -186,25 +196,5 @@ footer.footer{
         width: 100vw; /* 100% del ancho de la pantalla */
         height: 100vh; /* 100% del alto de la pantalla */
       }
-    .subtitle_L{
-        font-family: 'Pacifico', cursive;
-        color: #1b6736;
-        text-shadow: 5px 5px 5px rgba(126, 179, 136, 0.7);
-        margin-bottom: 2rem;
-        font-size: 2.5rem;
-    }
-    .titulo{
-        font-family: 'Pacifico', cursive;
-        color: #BC321F; /*red*/
-        text-shadow: 5px 5px 5px rgba(154, 112, 112, 0.7);
-        font-size: 4.5rem;
-    }
-    .subtitle{
-        font-family: 'Pacifico', cursive;
-        color: #1b6736;
-        text-shadow: 5px 5px 5px rgba(126, 179, 136, 0.7);
-        margin-bottom: 2rem;
-        font-size: 3rem;
-    }
 }
 
