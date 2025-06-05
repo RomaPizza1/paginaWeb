@@ -112,7 +112,7 @@ footer.footer{
     padding-left: 10%;
 }
 .ImagenPortada {
-    background-image: url('../pictures/cover.jpeg'); /* Ajusta la ruta según tu estructura */
+    background-image: url('../pictures/sala2.jpeg'); /* Ajusta la ruta según tu estructura */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -185,7 +185,7 @@ footer.footer{
         font-size: 30px; */
     }
     .ImagenPortada {
-        background-image: url('../pictures/cover.jpeg'); /* Ajusta la ruta según tu estructura */
+        background-image: url('../pictures/pizzaMural.jpeg'); /* Ajusta la ruta según tu estructura */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
