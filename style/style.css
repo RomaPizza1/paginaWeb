@@ -40,13 +40,25 @@
 .linkMenu, .linkLocation{
     font-family: 'Lobster', cursive;
     color: #006837;
-    font-size: 35px;
+    font-size: 2rem;
 }
-.linkMenuMobile, .linkMenuLocation{
+.linkCallUs{
+    /* color: white;
+    position: absolute; 
+    bottom: 4px; 
+    right: 15px; 
+    font-size: 1.5rem; 
+    font-family: 'Lobster', cursive; */
+
+    color: white; 
+    font-size: 1.5rem; 
+    font-family: 'Lobster', cursive;
+}
+/* .linkMenuMobile, .linkMenuLocation{
     font-family: 'Lobster', cursive;
     color: #006837;
     font-size: 25px;
-}
+} */
 .bi-facebook, .bi-instagram, .bi-tiktok{ 
     color: white; margin-left: 20px; font-size: 20px;
 }
@@ -119,6 +131,22 @@ footer.footer{
     width: 100vw; /* 100% del ancho de la pantalla */
     height: 125vh; /* 100% del alto de la pantalla */
   }
+/* ----------------------- Se aplica en tablets grandes ---------------------- */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .footer p{
+        padding-left: 20rem;
+    }
+}
+
+/* ----------------------- Se aplica en tablets medianas ---------------------- */
+@media (min-width: 768px) and (max-width: 992px) {
+    .linksHeader{
+        max-width: 30%;
+    }
+    .footer p{
+        padding-left: 10rem;
+    }
+}
 /* ----------------------- Se aplica en móviles ---------------------- */
 @media (max-width: 768px) {
     .textPhone{
@@ -136,7 +164,15 @@ footer.footer{
     .linkMenuMobile, .linkMenuLocation{
         font-family: 'Lobster', cursive;
         color: #006837;
-        font-size: 30px;
+        font-size: 2rem;
+    }
+    .linkCallUsMob{
+        color: white;
+        position: absolute; 
+        bottom: 4px; 
+        right: 15px; 
+        font-size: 1.5rem; 
+        font-family: 'Lobster', cursive;
     }
     .divLocation{
         padding-left: 10%;
