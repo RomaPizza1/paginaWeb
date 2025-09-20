@@ -1,0 +1,22 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de log
+*.log
+
+# Carpetas temporales
+node_modules/
+dist/
+tmp/
+.cache/
+
+# Archivos de VS Code
+.vscode/
+*.code-workspace
+
+# Archivos de build
+*.bak
+*.tmp
+*.swp
