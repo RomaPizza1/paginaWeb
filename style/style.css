@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&display=swap');
 #main{
-    /* background-image: url('../pictures/ChatGPTImgPizzaClara.png');
+    background-image: url('../pictures/ChatGPTImgPizzaClara.png');
     background-repeat: repeat;
-    background-size: auto; */
-    background-color: #D6E4A2;
+    background-size: auto;
+    /* background-color: #D6E4A2; */
 }
 .pToppings{
     text-align: center;
@@ -22,6 +22,7 @@
 }
 .tituloHistory{
     font-family: 'Lobster', cursive;
+    color: #006837;
 }
 .textAppetizers , .textPizzas, .textPastas, .textSalads, .textDesserts{
     font-family: 'Lobster', cursive;

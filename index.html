@@ -112,21 +112,21 @@
         <!-- seccion seccion history-->
         <hr class="featurette-divider">
         <div id="sec-history">
-            <section class="py-5 text-center container">
+            <section class="text-center container">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
                         <h1 class="tituloHistory animacion-menu">Our History</h1>
                     </div>
                 </div>
             </section>
-            <div class="container">
+            <div class="container d-none d-md-block"> <!--desktop-->
                 <div class="row mt-3">
                     <div class="col-12 col-md-6 order-2 order-md-2">
-                        <img src="pictures/pizza.jpg" alt="Roma Pizza" class="img-fluid">
+                        <img src="pictures/schianoFamily.jpeg" alt="Roma Pizza" class="img-fluid">
                     </div>
                     <div class="col-12 col-md-6 order-1 order-md-1 d-flex flex-column">
                         <h2 class="order-1" style="font-family: 'Lobster', cursive; text-align: center; color: red;">
-                            El comienzo
+                            How It started
                         </h2>
                         <br>
                         <div style="order:3;">
@@ -144,7 +144,7 @@
                     </div>
                     <div class="col-12 col-md-6 order-1 order-md-1 d-flex flex-column">
                         <h2 class="order-1" style="font-family: 'Lobster', cursive; text-align: center; color: red;">
-                            Actualmente
+                            How It is going
                         </h2>
                         <br>
                         <div style="order:3;">
@@ -157,14 +157,45 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="container d-block d-md-none"><!--mobile-->
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <h2 style="font-family: 'Lobster', cursive; text-align: center; color: red;">
+                            How It started
+                        </h2>
+                        <br>
+                        <img src="pictures/schianoFamily.jpeg" alt="Roma Pizza" class="img-fluid">
+                        <br>
+                        <p>
+                            We are a local, family owned restaurant, passionately serving Lake Helen, 
+                            FL for over 30 years with deliciously baked New York style pizzas, subs, 
+                            calzones, pastas, salads, desserts and more.
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <h2 style="font-family: 'Lobster', cursive; text-align: center; color: red;">
+                            How it is going
+                        </h2>
+                        <br>
+                        <img src="pictures/pizza.jpg" alt="Roma Pizza" class="img-fluid">
+                        <br>
+                        <p>
+                            We are a local, family owned restaurant, passionately serving Lake Helen, 
+                            FL for over 30 years with deliciously baked New York style pizzas, subs, 
+                            calzones, pastas, salads, desserts and more.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- fin seccion history --> 
 
         <!-- seccion our specials -->
         <hr class="featurette-divider">
         <div id="sec-imagenes" style="margin-top: 4em;">
-            <section class="py-5 text-center container" style="padding-bottom: 0px !important;">
+            <section class="text-center container" style="padding-bottom: 0px !important;">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
                         <h1 class="tituloHistory animacion-menu">Our Specials</h1>
@@ -224,7 +255,7 @@
         <!-- seccion menu-->
         <hr class="featurette-divider">
         <div id="sec-menu" style="margin-top: 4em;">
-            <section class="py-5 text-center container">
+            <section class="text-center container">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
                         <!-- SVG -->
@@ -267,8 +298,8 @@
 
         <!-- seccion reviews -->
         <hr class="featurette-divider">
-        <div id="sec-reviews">
-            <!-- <section class="py-5 text-center container" style="padding-bottom: 0px !important;">
+        <div id="sec-reviews" style="background-color: #e1e4c5; opacity: 0.95;">
+            <!-- <section class="text-center container" style="padding-bottom: 0px !important;">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
                         <h1 class="tituloHistory animacion-menu">Reviews</h1>
@@ -283,7 +314,7 @@
         <!-- seccion location-->
         <hr class="featurette-divider">
         <div id="sec-location">
-            <section class="py-5 text-center container">
+            <section class="text-center container">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
                         <svg class="animacion-menu" width="100%" height="120" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
@@ -323,15 +354,15 @@
 
         <!-- seccion gallery -->
         <hr class="featurette-divider">
-        <div id="sec-gallery" style="margin-top: 4em;">
-            <section class="py-5 text-center container" style="padding-bottom: 0px !important;">
+        <div id="sec-gallery">
+            <section class="text-center container" style="padding-bottom: 0px !important;">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
                         <h1 class="tituloHistory animacion-menu">Gallery</h1>
                     </div>
                 </div>
             </section>
-            <div class="container"><!--d-none d-md-block-->
+            <div class="container" style="background-color: white;">
                 <div class="row g-3">
                     <div class="col-6 col-md-3">
                         <img src="pictures/pizza.jpg" class="img-fluid img-clickable" alt="">
