@@ -20,6 +20,9 @@
     stroke-width: 3px;
     fill: #c41e1e;
 }
+.tituloHistory{
+    font-family: 'Lobster', cursive;
+}
 .textAppetizers , .textPizzas, .textPastas, .textSalads, .textDesserts{
     font-family: 'Lobster', cursive;
     font-size: 6rem;
@@ -230,3 +233,25 @@ footer.footer{
       }
 }
 
+#modalImage {
+    cursor: zoom-in;
+    transition: transform 0.25s ease;
+    max-width: 100%;
+    max-height: 80vh;
+    touch-action: none; /* evita scroll accidental en móviles */
+  }
+  
+  #modalImage.zoomed {
+    transform: scale(2);
+    cursor: move;
+  }
+  
+  .modal-body {
+    overflow: hidden;
+    padding: 0;
+  }
+  
+.WidgetTitle__Header-sc-c581efe-2.dNtlyB{
+    display: none;
+}
+  
