@@ -15,7 +15,7 @@
 }
 .textMenu, .textLocation {
     font-family: 'Lobster', cursive;
-    font-size: 7rem;
+    font-size: 5rem;
     stroke: black;
     stroke-width: 3px;
     fill: #c41e1e;
@@ -33,7 +33,7 @@
 }
 .textPhone{
     font-family: 'Lobster', cursive;
-    font-size: 6rem;
+    font-size: 5rem;
     stroke: black;
     stroke-width: 3px;
     fill: #006837;
@@ -154,10 +154,10 @@ footer.footer{
 /* ----------------------- Se aplica en móviles ---------------------- */
 @media (max-width: 768px) {
     .textPhone{
-        font-size: 11rem;
+        font-size: 9rem;
     }
     .textMenu, .textLocation{
-        font-size: 6rem;
+        font-size: 4rem;
     }
     .textAppetizers , .textPizzas, .textPastas, .textSalads, .textDesserts{
         font-size: 8rem;
@@ -255,4 +255,13 @@ footer.footer{
 .WidgetTitle__Header-sc-c581efe-2.dNtlyB{
     display: none;
 }
+.gallery-img {
+    width: 100%;
+    height: 180px;       /* Ajusta la altura que quieras */
+    object-fit: cover;   /* Recorta la imagen para llenar el espacio */
+    border-radius: 8px;  /* Opcional: bordes redondeados para estética */
+  }
+  .marginPhoto{
+    margin-bottom: 10px;
+  }
   
