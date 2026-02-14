@@ -25,6 +25,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   </head>
   <body>
+      <!-- Modal para telefono -->
+      <div class="modal fade" id="telefonoModal" tabindex="-1" aria-labelledby="telefonoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="telefonoModalLabel" style="font-family: 'Lobster', cursive;">Phone Number</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p class="fs-4" style="font-family: 'Lobster', cursive;">Do you want to try the best pizza?</p>
+                    <p class="fs-4" style="font-family: 'Lobster', cursive;">Call us:</p>
+                    <a href="tel:+13862283444" class="btn btn-success fs-5">
+                        (386) 228-3444
+                    </a>
+                    <p class="fs-4" style="font-family: 'Lobster', cursive;">ó</p>
+                    <a href="tel:+13862283451" class="btn btn-success fs-5">
+                        (386) 228-3451
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- end Modal para telefono -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark-menu">
             <!-- barra menu y logo para desktop -->
@@ -70,10 +93,14 @@
                             <a class="navbar-brand linkMenuLocation" href="#sec-location">Location</a>
                         </div>
                         <div class="col-4" style="position: relative;">
-                           <a class="linkCallUsMob"href="tel:+13862283444">
+                           <!-- <a class="linkCallUsMob"href="tel:+13862283444">
                                <i class="bi bi-telephone-fill" style="margin-right: 5px"></i> 
                                Call us!
-                            </a>
+                            </a> -->
+                            <a class="linkCallUsMob" href="#" data-bs-toggle="modal" data-bs-target="#telefonoModal">
+                                <i class="bi bi-telephone-fill" style="margin-right: 5px"></i> 
+                                Call us!
+                             </a>
                         </div>
                     </div>
                 </div>
@@ -82,29 +109,6 @@
         </nav>
     </header>
     <main id="main">
-        <!-- Modal de Bootstrap Desktop -->
-        <div class="modal fade" id="telefonoModal" tabindex="-1" aria-labelledby="telefonoModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="telefonoModalLabel" style="font-family: 'Lobster', cursive;">Phone Number</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <p class="fs-4" style="font-family: 'Lobster', cursive;">Do you want to try the best pizza?</p>
-                    <p class="fs-4" style="font-family: 'Lobster', cursive;">Call us:</p>
-                    <a href="tel:+13862283444" class="btn btn-success fs-5">
-                        (386) 228-3444
-                    </a>
-                    <p class="fs-4" style="font-family: 'Lobster', cursive;">ó</p>
-                    <a href="tel:+13862283451" class="btn btn-success fs-5">
-                        (386) 228-3451
-                    </a>
-                </div>
-            </div>
-            </div>
-        </div>
-        <!-- end Modal de Bootstrap Desktop-->
         <!-- Picture Principal 2000px x 900px-->
         <div class="col-12 ImagenPortada">
             <!-- <img src="pictures/cover.jpeg" class="img-fluid" alt="..."> -->
