@@ -134,14 +134,4 @@ document.addEventListener('DOMContentLoaded', () => {
       modalVideo.src = '';
     });
   });
-
-//////// probando el link para los telefonos en mobile
-function togglePhones() {
-  var phones = document.getElementById("phoneOptions");
-  if (phones.style.display === "none") {
-     phones.style.display = "block";
-  } else {
-     phones.style.display = "none";
-  }
-}
   
