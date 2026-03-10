@@ -134,4 +134,57 @@ document.addEventListener('DOMContentLoaded', () => {
       modalVideo.src = '';
     });
   });
+  ///////// PROBANDO ZOOM PARA MOBILES
+  function zoomImage(img){
+
+    const overlay = document.createElement("div");
+    overlay.className="zoom-overlay";
+  
+    const image = document.createElement("img");
+    image.src = img.src;
+  
+    let scale = 1;
+    let startDistance = 0;
+  
+    function getDistance(touches){
+      return Math.sqrt(
+        Math.pow(touches[0].clientX - touches[1].clientX,2) +
+        Math.pow(touches[0].clientY - touches[1].clientY,2)
+      );
+    }
+  
+    image.addEventListener("touchstart", function(e){
+  
+      if(e.touches.length === 2){
+        startDistance = getDistance(e.touches);
+      }
+  
+    });
+  
+    image.addEventListener("touchmove", function(e){
+  
+      if(e.touches.length === 2){
+  
+        let newDistance = getDistance(e.touches);
+        let zoom = newDistance / startDistance;
+  
+        scale = Math.min(Math.max(1, zoom), 4);
+  
+        image.style.transform = "scale(" + scale + ")";
+        e.preventDefault();
+  
+      }
+  
+    });
+  
+    overlay.appendChild(image);
+  
+    overlay.addEventListener("click", function(e){
+      if(e.target === overlay){
+        overlay.remove();
+      }
+    });
+  
+    document.body.appendChild(overlay);
+  }
   
