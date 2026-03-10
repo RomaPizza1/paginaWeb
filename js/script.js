@@ -134,4 +134,20 @@ document.addEventListener('DOMContentLoaded', () => {
       modalVideo.src = '';
     });
   });
+
+  function zoomImage(img){
+    let overlay = document.createElement("div");
+    overlay.className="zoom-overlay";
+
+    let image = document.createElement("img");
+    image.src = img.src;
+
+    overlay.appendChild(image);
+
+    overlay.onclick = function(){
+        document.body.removeChild(overlay);
+    }
+
+    document.body.appendChild(overlay);
+}
   
