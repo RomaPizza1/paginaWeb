@@ -134,40 +134,4 @@ document.addEventListener('DOMContentLoaded', () => {
       modalVideo.src = '';
     });
   });
-
-//////// zoom fotos menu
-function zoomImage(img){
-
-  let overlay = document.createElement("div");
-  overlay.className="zoom-overlay";
-
-  let image = document.createElement("img");
-  image.src = img.src;
-
-  let scale = 1;
-  let lastTap = 0;
-
-  image.addEventListener("touchend", function(e){
-
-      let currentTime = new Date().getTime();
-      let tapLength = currentTime - lastTap;
-
-      if(tapLength < 300 && tapLength > 0){
-          // doble tap
-          scale = scale === 1 ? 2 : 1;
-          image.style.transform = "scale(" + scale + ")";
-      }
-
-      lastTap = currentTime;
-
-  });
-
-  overlay.appendChild(image);
-
-  overlay.onclick = function(){
-      document.body.removeChild(overlay);
-  }
-
-  document.body.appendChild(overlay);
-}
   
