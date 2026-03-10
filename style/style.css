@@ -9,10 +9,14 @@
     text-align: center;
     font-size: 1.5rem;
 }
-.row.py-lg-5, #sec-history, #sec-location, #sec-menu{
+.row.py-lg-5, #sec-history, #sec-location{
     background-color: #F9F7EF;
     opacity: 0.95;
 }
+#sec-menu{
+    background-color: #F9F7EF;
+}
+
 .textMenu, .textLocation {
     font-family: 'Lobster', cursive;
     font-size: 5rem;
@@ -23,6 +27,7 @@
 .tituloHistory{
     font-family: 'Lobster', cursive;
     color: #006837;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
 .textAppetizers , .textPizzas, .textPastas, .textSalads, .textDesserts{
     font-family: 'Lobster', cursive;
@@ -134,7 +139,13 @@ footer.footer{
     background-repeat: no-repeat;
     width: 100vw; /* 100% del ancho de la pantalla */
     height: 125vh; /* 100% del alto de la pantalla */
-  }
+}
+img.imgSpecial{
+    width: 50%;
+}
+.imgMenu{
+    width: 85%;
+}
 /* ----------------------- Se aplica en tablets grandes ---------------------- */
 @media (min-width: 992px) and (max-width: 1200px) {
     .footer p{
@@ -153,6 +164,12 @@ footer.footer{
 }
 /* ----------------------- Se aplica en móviles ---------------------- */
 @media (max-width: 768px) {
+    .imgMenu{
+        width: 100%;
+    }
+    img.imgSpecial{
+        width: 80%;
+    }
     .textPhone{
         font-size: 9rem;
     }
