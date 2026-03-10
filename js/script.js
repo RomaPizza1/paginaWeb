@@ -135,19 +135,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  function zoomImage(img){
-    let overlay = document.createElement("div");
-    overlay.className="zoom-overlay";
+//////// zoom fotos menu
+function zoomImage(img){
 
-    let image = document.createElement("img");
-    image.src = img.src;
+  let overlay = document.createElement("div");
+  overlay.className="zoom-overlay";
 
-    overlay.appendChild(image);
+  let image = document.createElement("img");
+  image.src = img.src;
 
-    overlay.onclick = function(){
-        document.body.removeChild(overlay);
-    }
+  let scale = 1;
+  let lastTap = 0;
 
-    document.body.appendChild(overlay);
+  image.addEventListener("touchend", function(e){
+
+      let currentTime = new Date().getTime();
+      let tapLength = currentTime - lastTap;
+
+      if(tapLength < 300 && tapLength > 0){
+          // doble tap
+          scale = scale === 1 ? 2 : 1;
+          image.style.transform = "scale(" + scale + ")";
+      }
+
+      lastTap = currentTime;
+
+  });
+
+  overlay.appendChild(image);
+
+  overlay.onclick = function(){
+      document.body.removeChild(overlay);
+  }
+
+  document.body.appendChild(overlay);
 }
   
