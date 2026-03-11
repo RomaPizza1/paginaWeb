@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   ///////// PROBANDO ZOOM PARA MOBILES
-  function zoomImage(img){
+  function openZoom(img){
 
     const overlay = document.createElement("div");
     overlay.className = "zoom-overlay";
@@ -143,43 +143,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const image = document.createElement("img");
     image.src = img.src;
   
-    let scale = 1;
-    let startDistance = 0;
+    let zoom = false;
+    let lastTap = 0;
   
-    function getDistance(touches){
-      return Math.sqrt(
-        Math.pow(touches[0].clientX - touches[1].clientX,2) +
-        Math.pow(touches[0].clientY - touches[1].clientY,2)
-      );
-    }
+    image.addEventListener("touchend", function(e){
   
-    image.addEventListener("touchstart", function(e){
+      const now = new Date().getTime();
+      const tap = now - lastTap;
   
-      if(e.touches.length === 2){
-        startDistance = getDistance(e.touches);
-      }
+      if(tap < 300 && tap > 0){
   
-    });
+        zoom = !zoom;
   
-    image.addEventListener("touchmove", function(e){
-  
-      if(e.touches.length === 2){
-  
-        let newDistance = getDistance(e.touches);
-        let zoom = newDistance / startDistance;
-  
-        image.style.transform = "scale(" + (scale * zoom) + ")";
+        if(zoom){
+          image.style.transform = "scale(2)";
+        }else{
+          image.style.transform = "scale(1)";
+        }
   
         e.preventDefault();
       }
   
-    });
-  
-    image.addEventListener("touchend", function(e){
-  
-      if(e.touches.length < 2){
-        scale = parseFloat(image.style.transform.replace("scale(","")) || 1;
-      }
+      lastTap = now;
   
     });
   
@@ -193,4 +178,3 @@ document.addEventListener('DOMContentLoaded', () => {
   
     document.body.appendChild(overlay);
   }
-  
