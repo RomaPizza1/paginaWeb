@@ -143,6 +143,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const image = document.createElement("img");
     image.src = img.src;
   
+    const closeBtn = document.createElement("div");
+    closeBtn.className = "closeZoom";
+    closeBtn.innerHTML = "✕";
+  
     let zoom = false;
     let lastTap = 0;
   
@@ -168,13 +172,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
     });
   
-    overlay.appendChild(image);
+    closeBtn.onclick = function(){
+      overlay.remove();
+    };
   
-    overlay.onclick = function(e){
-      if(e.target === overlay){
-        overlay.remove();
-      }
-    }
+    overlay.appendChild(closeBtn);
+    overlay.appendChild(image);
   
     document.body.appendChild(overlay);
   }
