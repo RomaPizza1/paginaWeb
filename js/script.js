@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function zoomImage(img){
 
     const overlay = document.createElement("div");
-    overlay.className="zoom-overlay";
+    overlay.className = "zoom-overlay";
   
     const image = document.createElement("img");
     image.src = img.src;
@@ -168,22 +168,28 @@ document.addEventListener('DOMContentLoaded', () => {
         let newDistance = getDistance(e.touches);
         let zoom = newDistance / startDistance;
   
-        scale = Math.min(Math.max(1, zoom), 4);
+        image.style.transform = "scale(" + (scale * zoom) + ")";
   
-        image.style.transform = "scale(" + scale + ")";
         e.preventDefault();
+      }
   
+    });
+  
+    image.addEventListener("touchend", function(e){
+  
+      if(e.touches.length < 2){
+        scale = parseFloat(image.style.transform.replace("scale(","")) || 1;
       }
   
     });
   
     overlay.appendChild(image);
   
-    overlay.addEventListener("click", function(e){
+    overlay.onclick = function(e){
       if(e.target === overlay){
         overlay.remove();
       }
-    });
+    }
   
     document.body.appendChild(overlay);
   }

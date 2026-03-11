@@ -164,7 +164,7 @@ img.imgSpecial{
   .zoom-overlay img{
     max-width:95%;
     max-height:95%;
-    transform-origin:center;
+    touch-action:none;
     transition:transform 0.1s;
   }
 /* ----------------------- Se aplica en tablets grandes ---------------------- */
