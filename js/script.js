@@ -150,12 +150,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let zoom = false;
     let lastTap = 0;
   
-    image.addEventListener("touchend", function(e){
+    image.addEventListener("pointerup", function(e){
   
-      const now = new Date().getTime();
-      const tap = now - lastTap;
+      const currentTime = Date.now();
+      const tapLength = currentTime - lastTap;
   
-      if(tap < 300 && tap > 0){
+      if(tapLength < 300 && tapLength > 0){
   
         zoom = !zoom;
   
@@ -165,10 +165,9 @@ document.addEventListener('DOMContentLoaded', () => {
           image.style.transform = "scale(1)";
         }
   
-        e.preventDefault();
       }
   
-      lastTap = now;
+      lastTap = currentTime;
   
     });
   
