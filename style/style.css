@@ -160,7 +160,7 @@ img.imgSpecial{
   }
   
   .zoom-overlay img{
-    width:100%;
+    width:80%;
     max-width:none;
     transition:transform 0.25s ease;
   }
